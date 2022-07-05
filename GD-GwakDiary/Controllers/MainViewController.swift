@@ -11,6 +11,13 @@ import Then
 
 class MainViewController: UIViewController{
     
-    private let diaryTableView: UITableView()
+    private let diaryTableView: UITableView = UITableView()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+        
+    }
 }

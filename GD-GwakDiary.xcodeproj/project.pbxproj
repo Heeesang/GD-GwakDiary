@@ -14,6 +14,11 @@
 		05C96F75287301C80074FD5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C96F74287301C80074FD5B /* MainViewController.swift */; };
 		05C96F7C28730B220074FD5B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 05C96F7B28730B220074FD5B /* SnapKit */; };
 		05C96F7F28730B3A0074FD5B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 05C96F7E28730B3A0074FD5B /* Then */; };
+		05C96F8128745D2E0074FD5B /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C96F8028745D2E0074FD5B /* DiaryModel.swift */; };
+		05C96F8428745E130074FD5B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 05C96F8328745E130074FD5B /* Realm */; };
+		05C96F8628745E130074FD5B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 05C96F8528745E130074FD5B /* RealmSwift */; };
+		05C96F8828745E650074FD5B /* AddDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C96F8728745E650074FD5B /* AddDiaryViewController.swift */; };
+		05C96F8A28745E9E0074FD5B /* ReadDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C96F8928745E9E0074FD5B /* ReadDiaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,9 @@
 		05C96F6C2872D78F0074FD5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05C96F6E2872D78F0074FD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C96F74287301C80074FD5B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		05C96F8028745D2E0074FD5B /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		05C96F8728745E650074FD5B /* AddDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryViewController.swift; sourceTree = "<group>"; };
+		05C96F8928745E9E0074FD5B /* ReadDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadDiaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C96F8628745E130074FD5B /* RealmSwift in Frameworks */,
+				05C96F8428745E130074FD5B /* Realm in Frameworks */,
 				05C96F7C28730B220074FD5B /* SnapKit in Frameworks */,
 				05C96F7F28730B3A0074FD5B /* Then in Frameworks */,
 			);
@@ -74,6 +84,7 @@
 		05C96F762873027E0074FD5B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				05C96F8028745D2E0074FD5B /* DiaryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				05C96F74287301C80074FD5B /* MainViewController.swift */,
+				05C96F8728745E650074FD5B /* AddDiaryViewController.swift */,
+				05C96F8928745E9E0074FD5B /* ReadDiaryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +132,8 @@
 			packageProductDependencies = (
 				05C96F7B28730B220074FD5B /* SnapKit */,
 				05C96F7E28730B3A0074FD5B /* Then */,
+				05C96F8328745E130074FD5B /* Realm */,
+				05C96F8528745E130074FD5B /* RealmSwift */,
 			);
 			productName = "GD-GwakDiary";
 			productReference = 05C96F5D2872D7820074FD5B /* GD-GwakDiary.app */;
@@ -151,6 +166,7 @@
 			packageReferences = (
 				05C96F7A28730B220074FD5B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				05C96F7D28730B3A0074FD5B /* XCRemoteSwiftPackageReference "Then" */,
+				05C96F8228745E130074FD5B /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 05C96F5E2872D7820074FD5B /* Products */;
 			projectDirPath = "";
@@ -179,7 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C96F612872D7820074FD5B /* AppDelegate.swift in Sources */,
+				05C96F8128745D2E0074FD5B /* DiaryModel.swift in Sources */,
+				05C96F8A28745E9E0074FD5B /* ReadDiaryViewController.swift in Sources */,
 				05C96F75287301C80074FD5B /* MainViewController.swift in Sources */,
+				05C96F8828745E650074FD5B /* AddDiaryViewController.swift in Sources */,
 				05C96F632872D7820074FD5B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +427,14 @@
 				kind = branch;
 			};
 		};
+		05C96F8228745E130074FD5B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -420,6 +447,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 05C96F7D28730B3A0074FD5B /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		05C96F8328745E130074FD5B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05C96F8228745E130074FD5B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		05C96F8528745E130074FD5B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05C96F8228745E130074FD5B /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
