@@ -19,6 +19,7 @@
 		05C96F8628745E130074FD5B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 05C96F8528745E130074FD5B /* RealmSwift */; };
 		05C96F8828745E650074FD5B /* AddDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C96F8728745E650074FD5B /* AddDiaryViewController.swift */; };
 		05C96F8A28745E9E0074FD5B /* ReadDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C96F8928745E9E0074FD5B /* ReadDiaryViewController.swift */; };
+		05C96F8D287531C40074FD5B /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C96F8C287531C40074FD5B /* DiaryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		05C96F8028745D2E0074FD5B /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
 		05C96F8728745E650074FD5B /* AddDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryViewController.swift; sourceTree = "<group>"; };
 		05C96F8928745E9E0074FD5B /* ReadDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadDiaryViewController.swift; sourceTree = "<group>"; };
+		05C96F8C287531C40074FD5B /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		05C96F5F2872D7820074FD5B /* GD-GwakDiary */ = {
 			isa = PBXGroup;
 			children = (
+				05C96F8B2874798B0074FD5B /* Cells */,
 				05C96F792873031E0074FD5B /* Controllers */,
 				05C96F782873028F0074FD5B /* Views */,
 				05C96F77287302860074FD5B /* ViewModels */,
@@ -111,6 +114,14 @@
 				05C96F8928745E9E0074FD5B /* ReadDiaryViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05C96F8B2874798B0074FD5B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				05C96F8C287531C40074FD5B /* DiaryTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C96F8D287531C40074FD5B /* DiaryTableViewCell.swift in Sources */,
 				05C96F612872D7820074FD5B /* AppDelegate.swift in Sources */,
 				05C96F8128745D2E0074FD5B /* DiaryModel.swift in Sources */,
 				05C96F8A28745E9E0074FD5B /* ReadDiaryViewController.swift in Sources */,
